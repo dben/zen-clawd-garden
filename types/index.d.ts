@@ -32,7 +32,7 @@ export type GardenOverride = {
 
 declare module 'claude-code' {
   interface PluginState {
-    'zen-crab-garden': {
+    'zen-clawd-garden': {
       view: Shaped<GardenView | null>
       override: Shaped<GardenOverride>
     }

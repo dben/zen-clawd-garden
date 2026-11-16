@@ -12,8 +12,8 @@ import { ACTIVITIES, moonPhase, pickActivity, sunTimes, weatherOf } from './sky'
 // redraws the scene and the app's colours when either has moved on.
 
 const SCENE = 'garden'
-const view = atom({ plugin: 'zen-crab-garden', key: 'view' } as const, null, { shape: 'view-2' })
-const override = atom({ plugin: 'zen-crab-garden', key: 'override' } as const, {}, { shape: 'override-1' })
+const view = atom({ plugin: 'zen-clawd-garden', key: 'view' } as const, null, { shape: 'view-2' })
+const override = atom({ plugin: 'zen-clawd-garden', key: 'override' } as const, {}, { shape: 'override-1' })
 
 /** One weather reading, kept in the store so every session shares it. */
 type Report = { at: number; code: number; cloud: number; wind: number; gust: number; sunrise: number; sunset: number; offset: number }
@@ -242,7 +242,7 @@ export const register: Register = on => {
         void refresh($).catch(() => undefined)
       })
     } catch (error) {
-      $.ui.log(`zen-crab-garden could not start: ${String(error)}`, { to: 'debug' })
+      $.ui.log(`zen-clawd-garden could not start: ${String(error)}`, { to: 'debug' })
     }
     return next(e)
   })

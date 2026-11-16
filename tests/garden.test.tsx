@@ -2,10 +2,10 @@ import { expect, mock, test } from 'claude-code/testing'
 import type { CommandRunInput, On } from 'claude-code'
 
 const BACKDROP = {
-  plugin: 'zen-crab-garden',
+  plugin: 'zen-clawd-garden',
   component: 'Backdrop',
   requestId: 'backdrop',
-  props: { scene: 'garden', plugin: 'zen-crab-garden', glass: false },
+  props: { scene: 'garden', plugin: 'zen-clawd-garden', glass: false },
 } as const
 
 // 20:00 UTC is noon where the forecast below says the garden is (UTC-8).
