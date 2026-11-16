@@ -1,0 +1,5 @@
+{
+  "name": "zen-clawd-garden",
+  "owner": { "name": "dben" },
+  "plugins": [{ "name": "zen-clawd-garden", "source": "./" }]
+}

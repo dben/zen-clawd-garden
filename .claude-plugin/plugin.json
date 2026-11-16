@@ -1,0 +1,6 @@
+{
+  "name": "zen-clawd-garden",
+  "version": "0.1.0",
+  "description": "A little Clawd tends a peaceful garden behind your chats, with a sky and colors that follow your local time and weather.",
+  "types": "./types/index.d.ts"
+}
